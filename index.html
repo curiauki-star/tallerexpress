@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TallerEpress</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller Express Chapa y Pintura - Especialistas en la Piel de tu Vehículo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- MENÚ SUPERIOR -->
+    <header>
+        <div class="logo">TALLER <span>EXPRESS</span></div>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#galeria">Galería</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#opiniones">Opiniones</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <a href="tel:+34948141980" class="btn-header">Presupuesto</a>
+    </header>
+
+    <!-- HERO SECTION CON WALLPAPER DE FONDO -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <div class="subtitle-red">CHAPA · PINTURA · RESTAURACIÓN</div>
+            <h1>Especialistas en la <span>piel de tu vehículo.</span></h1>
+            <p>Taller Express Chapa y Pintura en Villava. Devolvemos el valor, el brillo y la perfección a cada curva.</p>
+            <div class="hero-buttons">
+                <a href="tel:+34948141980" class="btn-primary">Solicitar Presupuesto →</a>
+                <a href="#galeria" class="btn-secondary">Ver Trabajos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERÍA DE RESULTADOS (ANTES Y DESPUÉS) -->
+    <section id="galeria">
+        <div class="subtitle-red center">GALERÍA DE RESULTADOS</div>
+        <h2 class="section-title center">El acabado de fábrica, recuperado.</h2>
+        <p class="section-desc center">Desliza para comparar el antes y después de nuestros trabajos.</p>
+
+        <div class="galeria-grid">
+            <!-- TRABAJO 1: FURGONETA FIAT -->
+            <div class="card-comparacion">
+                <div class="slider-box" style="--pos: 50%;">
+                    <span class="tag tag-antes">DESPUÉS</span>
+                    <span class="tag tag-despues">ANTES</span>
+                    <img src="antes.jpg" alt="Antes de la reparación de chapa">
+                    <div class="img-after"><img src="despues.jpg" alt="Después de la reparación de chapa"></div>
+                    <div class="linea-divisoria"></div>
+                    <input type="range" min="0" max="100" value="50" class="range-input" oninput="this.parentElement.style.setProperty('--pos', this.value)">
+                </div>
+                <div class="card-info">
+                    <h3>Restauración de Frontal Estructural</h3>
+                    <p>Reparación de impacto frontal, sustitución de paragolpes y alineación de óptica.</p>
+                </div>
+            </div>
+
+            <!-- TRABAJO DE PINTADO -->
+            <div class="card-comparacion">
+<div class="slider-box" style="--pos: 50%;">
+    <span class="tag tag-antes">DESPUÉS</span>
+    <span class="tag tag-despues">ANTES</span>
+    <img src="antes-pintura.jpg" alt="Antes de pintado">
+    <div class="img-after">
+        <img src="despues-pintura.jpg" alt="Después de pintado">
+    </div>
+    <div class="linea-divisoria"></div>
+    <input type="range" min="0" max="100" value="50" class="range-input" oninput="this.parentElement.style.setProperty('--pos', this.value)">
+</div>                <div class="card-info">
+                    <h3>Pintura y Pulido de Carrocería</h3>
+                    <p>Eliminación de arañazos profundos y acabado en cabina presurizada.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios">
+        <div class="subtitle-red center">SERVICIOS</div>
+        <h2 class="section-title center">Calidad certificada y acabados premium</h2>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🛡️</div>
+                <h3>Reparación de Carrocería y Chasis</h3>
+                <p>Restauración estructural con bancada de precisión. Devolvemos la geometría original a tu vehículo.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🎨</div>
+                <h3>Pintura Completa en Cabina Presurizada</h3>
+                <p>Acabado de fábrica garantizado en cabina presurizada con control de partículas.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🎯</div>
+                <h3>Igualación de Color Computarizada</h3>
+                <p>Tecnología espectrofotométrica para una coincidencia 100% exacta con el tono original.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">✨</div>
+                <h3>Pulido y Encerado Profesional</h3>
+                <p>Eliminación de micro-arañazos, lares y opacidad. Brillo intenso de exposición.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🚗</div>
+                <h3>Pintura Parcial y Retoques</h3>
+                <p>Reparación puntual de golpe de chapa o rayones sin repintar paneles innecesarios.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🔧</div>
+                <h3>Restauración Estética Integral</h3>
+                <p>Restauración de faros, plásticos exteriores, molduras y vehículos clásicos.</p>
+            </div>
+        </div>
+
+        <p class="quick-maint-text">Mantenimiento rápido mientras cuidamos tu estética</p>
+
+        <div class="quick-maint-grid">
+            <div class="quick-card">⚙️ Cambio de aceite</div>
+            <div class="quick-card">🔘 Neumáticos</div>
+            <div class="quick-card">🛡️ Frenos</div>
+            <div class="quick-card">🚗 Revisión básica</div>
+            <div class="quick-card">🔧 Filtros</div>
+            <div class="quick-card">🔋 Batería</div>
+        </div>
+    </section>
+
+    <!-- OPINIONES -->
+    <section id="opiniones">
+        <div class="subtitle-red center">OPINIONES</div>
+        <h2 class="section-title center">Lo que dicen nuestros clientes</h2>
+
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Me dejaron la furgoneta como recién salida del concesionario tras un impacto fuerte. La chapa quedó impecable."</p>
+                <h4>Carlos M.</h4>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Profesionales de verdad. La cabina de pintura deja un acabado uniforme y sin imperfecciones."</p>
+                <h4>Ana G.</h4>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Un trato muy cercano y transparente con el presupuesto. Devolvieron el brillo a mi coche."</p>
+                <h4>Mikel Z.</h4>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Grandes especialistas en restauración. Trabajo minucioso y acabados impecables."</p>
+                <h4>Laura P.</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO Y UBICACIÓN -->
+    <section id="contacto">
+        <div class="subtitle-red">CONTACTO</div>
+        <h2 class="section-title left-align">Visítanos o solicita presupuesto</h2>
+
+        <div class="contacto-container">
+            <div class="info-side">
+                <div class="info-item">
+                    <h4>📍 Dirección</h4>
+                    <p>Pol. Ind. Landazábal Calle 2, nave 12<br>31610 Villava, Navarra, España</p>
+                </div>
+                <div class="info-item">
+                    <h4>📞 Teléfono</h4>
+                    <p><a href="tel:+34948141980">+34 948 14 19 80</a></p>
+                </div>
+                <div class="info-item">
+                    <h4>⏰ Horario</h4>
+                    <p>Lunes a Viernes: 8:00 – 18:00<br>Sábados: 9:00 – 13:00</p>
+                </div>
+
+<div class="mapa-box">
+      <iframe 
+        src="https://maps.google.com/maps?q=Pol.+Ind.+Landaz%C3%A1bal+Calle+2,+11,+31610+Villava,+Navarra,+Spain&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" 
+        width="100%" 
+        height="100%" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>            </div>
+
+<!-- REDES SOCIALES -->
+    <div class="form-side">
+      <h3>Síguenos en Redes</h3>
+      <p class="form-sub">Visita nuestros perfiles para ver más trabajos y reparaciones.</p>
+
+      <div class="redes-container">
+        <a href="https://instagram.com/tallerexpress.pamplona" target="_blank" class="btn-red social-ig">
+          📸 Instagram: https://www.instagram.com/tallerexpress.pamplona/?utm_source=ig_web_button_share_sheet
+        </a>
+        <a href="https://facebook.com/search/top?q=Taller%20Express%20Chapa%20y%20Pintura" target="_blank" class="btn-red social-fb">
+          📘 Facebook: https://www.facebook.com/p/Taller-Express-Chapa-Pintura-61589256562749/
+        </a>
+      </div>
+    </div>        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA MOTIVACIONAL -->
+    <footer>
+        <p class="motivational-quote">"Cada chapa tiene su historia, pero con la pasión adecuada le devolvemos la perfección de su primer día."</p>
+        <p class="copyright">© Taller Express Chapa y Pintura. Creador Curi. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- BOTÓN FLOTANTE WHATSAPP -->
+    <a href="https://wa.me/34948141980?text=Hola,%20quisiera%20pedir%20un%20presupuesto%20para%20mi%20coche." target="_blank" class="btn-whatsapp" title="Contactar por WhatsApp">
+        💬
+    </a>
+
+</body>
+</html>
